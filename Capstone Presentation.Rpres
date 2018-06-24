@@ -1,0 +1,43 @@
+Word Predictor
+========================================================
+author: Vivian Yeh
+date: June 24, 2018
+
+What is the Word Predictor?
+========================================================
+
+**Word Predictor** is a simple and easy text prediction application.
+
+![Word Predictor](WordPredictor.png)
+
+Word Predictor Interface
+========================================================
+
+**Word Predictor** allows you to enter a word or phrase. Once you click "Predict Next Word", **Word Predictor** displays your selected input before and after processing. 
+
+**Word Predictor** will output the predicted next word in red text and a list of possible alternatives.
+
+How does the application work?
+========================================================
+
+* **Word Predictor** uses the [HC Corpora][1] data set determining word frequency.
+
+* The [HC Corpora][1] data set is cleansed and processed to removed profanity, whitespace, and extra characters and then is categorized into the most frequent word combinations (N-grams).
+
+* Using these N-gram frequencies **Word Predictor** can take the user submitted words or phrases to quickly calculate the predicted next word.
+
+[1]: http://www.corpora.heliohost.org/ "HC Corpora"
+
+References
+========================================================
+
+The code to the application can be found on [Github][1]
+
+Working Version of [Word Predictor][2]
+
+The source [HC Corpora][3] data set and associated [ReadMe][4].
+
+[1]: https://github.com/viyeh/DataScienceCapstone "Github"
+[2]: https://viyeh.shinyapps.io/Capstone/ "Word Predictor"
+[3]: http://www.corpora.heliohost.org/ "HC Corpora"
+[4]: http://www.corpora.heliohost.org/aboutcorpus.html "ReadMe"
